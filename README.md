@@ -2,9 +2,6 @@
 
 Quarto Typst-based PDF format extension for producing bioRxiv-style preprint PDFs.
 
-The PDF format is implemented as a Quarto extension in `_extensions/bioarxiv/`
-and provides the output format `bioarxiv-typst` (PDF output).
-
 ## Use as a template (new manuscript)
 
 ```bash
@@ -37,21 +34,14 @@ Override per-document by setting `csl:` to a local `.csl` file path.
 The format defaults to two-column layout. Override per-document with:
 
 ```yaml
-columns: 1
-
-format:
-  bioarxiv-typst: {}
-```
-
-Or format-scoped:
-
-```yaml
 format:
   bioarxiv-typst:
     columns: 1
 ```
 
-## Attribution and licensing
+## Attribution
 
-This format is inspired by the Henriques Lab bioRxiv LaTeX template but does
-not bundle their LaTeX class/BibTeX assets. See `_extensions/bioarxiv/NOTICE.md`.
+This format is inspired by two wonderful projects:
+
+- [Henriques Lab bioRxiv LaTeX template](https://www.overleaf.com/latex/templates/henriqueslab-biorxiv-template/nyprsybwffws)
+- [quarto-preprint](https://github.com/mvuorre/quarto-preprint)
