@@ -1,0 +1,8 @@
+template.pdf
+template.typ
+template_files/
+.quarto/
+/oxford-journals-scimed-author-date.csl
+
+# OS / editor
+.DS_Store
