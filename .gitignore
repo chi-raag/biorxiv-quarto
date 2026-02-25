@@ -2,7 +2,9 @@ template.pdf
 template.typ
 template_files/
 .quarto/
-/oxford-journals-scimed-author-date.csl
+AGENTS.md
+article-format-template/
+/.luarc.json
 
 # OS / editor
 .DS_Store

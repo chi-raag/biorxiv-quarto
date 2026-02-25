@@ -2,6 +2,10 @@
 
 Quarto Typst-based PDF format extension for producing bioRxiv-style preprint PDFs.
 
+[View example PDF](https://chi-raag.github.io/bioarxiv-quarto/template.pdf)
+
+Requires **Quarto >= 1.8.0**.
+
 ## Use as a template (new manuscript)
 
 ```bash
@@ -20,24 +24,51 @@ quarto add chi-raag/bioarxiv-quarto
 quarto render template.qmd --to bioarxiv-typst
 ```
 
-## Citations (CSL)
+## Format Options
 
-Typst requires an **independent** CSL file (dependent CSL styles aren’t
-supported). This extension defaults to
-`oxford-journals-scimed-author-date.csl` (the independent
-parent of Zotero’s dependent `bioinformatics` style).
+Key YAML options accepted by `bioarxiv-typst`:
 
-Override per-document by setting `csl:` to a local `.csl` file path.
+| Option | Level | Description |
+|---|---|---|
+| `title` | top | Manuscript title |
+| `shorttitle` | top | Short title for the running header (defaults to `title`) |
+| `leadauthor` | top | Last name shown in the footer (defaults to first author's surname) |
+| `author` | top | List of authors with `name`, `affiliations`, `email`, `corresponding` |
+| `abstract` | top | Abstract text |
+| `keywords` | top | List of keywords |
+| `correspondence-email` | top | Email shown in the correspondence footnote |
+| `bibliography` | top | Path to a `.bib` file |
+| `bibliographystyle` | format | Typst citation style (default: `springer-basic`) |
+| `columns` | format | Number of columns: `1` or `2` (default: `2`) |
 
-## Columns
-
-The format defaults to two-column layout. Override per-document with:
+### Author / affiliation syntax
 
 ```yaml
-format:
-  bioarxiv-typst:
-    columns: 1
+author:
+  - name: John Doe
+    corresponding: true
+    affiliations:
+      - Department of X, University Y, City, Country
+    email: john.doe@example.org
 ```
+
+Affiliations can be plain strings (as above) or structured maps with `name`, `department`, `city`, `country`, etc.
+
+## Citations (Typst)
+
+This format uses Typst's built-in citation system by default.
+
+- Default style: `bibliographystyle: springer-basic` (Typst built-in).
+- Override with a Typst built-in style (e.g. `bibliographystyle: apa`) or an
+  independent `.csl` file path.
+
+If you prefer Pandoc citeproc instead, set `citeproc: true` and use `csl:` (path
+or URL).
+
+## Fonts
+
+The template uses **Libertinus Serif** for body text. If Libertinus Serif is not
+installed, it falls back to **New Computer Modern**. Both are freely available.
 
 ## Attribution
 

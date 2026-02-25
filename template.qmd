@@ -1,0 +1,56 @@
+---
+title: "bioRxiv preprint (Quarto)"
+shorttitle: "My Preprint"
+leadauthor: "Doe"
+author:
+  - name: John Doe
+    corresponding: true
+    affiliations:
+      - Department of Something, Somewhere University, Some City, Some Country
+    email: john.doe@example.org
+  - name: Jane Doe
+    affiliations:
+      - Department of Another Thing, Another University, Another City, Another Country
+abstract: |
+  This document demonstrates the bioRxiv Typst-based PDF Quarto format.
+  Replace this text with your abstract.
+keywords:
+  - template
+  - demo
+correspondence-email: john.doe@example.org
+bibliography: bibliography.bib
+format:
+  bioarxiv-typst: default
+---
+
+# Introduction {.unnumbered}
+
+Introduce the topic, motivation, and goals of the study. Cite relevant prior
+work [@Gustafsson2016; @CameronTrivedi2013].
+
+# Methods {.unnumbered}
+
+Describe your experimental or computational methods.
+
+# Results {.unnumbered}
+
+Present findings. Reference figures (e.g. @fig-placeholder) and supplementary
+material as needed.
+
+![Placeholder figure with a long example caption to show justification
+setting.](figures/Figure_1.png){#fig-placeholder width="80%"}
+
+# Discussion {.unnumbered}
+
+Interpret results in the context of existing literature and describe
+limitations.
+
+# Acknowledgements {.unnumbered}
+
+We thank colleagues for helpful discussions. Funding was provided by \[agency\].
+
+# Supplementary Information {.unnumbered}
+
+## Supplementary Methods
+
+Additional methodological details go here.
