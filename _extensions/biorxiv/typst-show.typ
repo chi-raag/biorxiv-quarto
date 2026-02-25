@@ -5,9 +5,9 @@ $endif$
 $if(subtitle)$
   subtitle: [$subtitle$],
 $endif$
-$if(bioarxiv-authors)$
+$if(biorxiv-authors)$
   authors: (
-$for(bioarxiv-authors)$
+$for(biorxiv-authors)$
     (
       name: [$it.name$],
       marks: "$it.affil-marks$".split(",").filter(m => m != ""),
@@ -19,9 +19,9 @@ $endif$
 $endfor$
   ),
 $endif$
-$if(bioarxiv-affiliations)$
+$if(biorxiv-affiliations)$
   affiliations: (
-$for(bioarxiv-affiliations)$
+$for(biorxiv-affiliations)$
     (index: "$it.index$", text: [$it.text$]),
 $endfor$
   ),

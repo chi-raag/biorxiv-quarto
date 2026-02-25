@@ -247,8 +247,8 @@ function Meta(meta)
     }
   end
 
-  meta["bioarxiv-authors"] = pandoc.MetaList(normalized_authors)
-  meta["bioarxiv-affiliations"] = pandoc.MetaList(aff_meta_list)
+  meta["biorxiv-authors"] = pandoc.MetaList(normalized_authors)
+  meta["biorxiv-affiliations"] = pandoc.MetaList(aff_meta_list)
 
   if meta.shorttitle == nil and meta.title ~= nil then
     meta.shorttitle = meta.title

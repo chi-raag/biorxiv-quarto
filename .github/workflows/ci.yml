@@ -18,5 +18,5 @@ jobs:
         run: |
           quarto --version
           quarto typst --version
-          quarto render template.qmd --to bioarxiv-typst
+          quarto render template.qmd --to biorxiv-typst
           test -f template.pdf

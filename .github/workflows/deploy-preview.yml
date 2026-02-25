@@ -23,7 +23,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render template
-        run: quarto render template.qmd --to bioarxiv-typst
+        run: quarto render template.qmd --to biorxiv-typst
 
       - name: Prepare pages artifact
         run: |

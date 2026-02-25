@@ -1,32 +1,32 @@
-# bioarxiv-quarto
+# biorxiv-quarto
 
 Quarto Typst-based PDF format extension for producing bioRxiv-style preprint PDFs.
 
-[View example PDF](https://chi-raag.github.io/bioarxiv-quarto/template.pdf)
+[View example PDF](https://chi-raag.github.io/biorxiv-quarto/template.pdf)
 
 Requires **Quarto >= 1.8.0**.
 
 ## Use as a template (new manuscript)
 
 ```bash
-quarto use template chi-raag/bioarxiv-quarto
+quarto use template chi-raag/biorxiv-quarto
 ```
 
 ## Install into an existing project
 
 ```bash
-quarto add chi-raag/bioarxiv-quarto
+quarto add chi-raag/biorxiv-quarto
 ```
 
 ## Render
 
 ```bash
-quarto render template.qmd --to bioarxiv-typst
+quarto render template.qmd --to biorxiv-typst
 ```
 
 ## Format Options
 
-Key YAML options accepted by `bioarxiv-typst`:
+Key YAML options accepted by `biorxiv-typst`:
 
 | Option | Level | Description |
 |---|---|---|

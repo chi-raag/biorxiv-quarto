@@ -20,7 +20,7 @@ keywords:
 correspondence-email: john.doe@example.org
 bibliography: bibliography.bib
 format:
-  bioarxiv-typst: default
+  biorxiv-typst: default
 ---
 
 # Introduction {.unnumbered}

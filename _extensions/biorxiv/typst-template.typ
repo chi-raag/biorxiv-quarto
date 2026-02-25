@@ -1,4 +1,4 @@
-#let bioarxiv_title_block(
+#let biorxiv_title_block(
   title: none,
   subtitle: none,
   authors: (),
@@ -135,7 +135,7 @@
     }
   )
 
-  bioarxiv_title_block(
+  biorxiv_title_block(
     title: title,
     subtitle: subtitle,
     authors: authors,

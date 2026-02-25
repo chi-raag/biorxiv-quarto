@@ -10,7 +10,7 @@ contributes:
       toc: false
       bibliographystyle: springer-basic
       filters:
-        - bioarxiv.lua
+        - biorxiv.lua
       template-partials:
         - typst-template.typ
         - typst-show.typ
