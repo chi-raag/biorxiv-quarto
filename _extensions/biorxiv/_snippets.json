@@ -3,7 +3,7 @@
     "prefix": "biorxiv-format",
     "body": [
       "format:",
-      "  biorxiv-typst:",
+      "  typst:",
       "    columns: ${1|1,2|}",
       "    bibliographystyle: ${2:springer-basic}",
       "    toc: false"
@@ -11,7 +11,7 @@
     "description": "Insert biorxiv-typst format options."
   },
   "bioRxiv author entry": {
-    "prefix": "biorxiv-author",
+    "prefix": "author",
     "body": [
       "author:",
       "  - name: ${1:Jane Doe}",
